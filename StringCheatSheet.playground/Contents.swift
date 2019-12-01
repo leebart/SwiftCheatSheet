@@ -1,6 +1,7 @@
 import UIKit
 
 var abc = "abc", def = "def", hw = "hello world"
+
 ///String compare
 if(def>abc){} //true
 
@@ -57,7 +58,6 @@ let iStr = String(i)
 let hexStr = String(i,radix:16)
 let binaryStr = String(i,radix:2)
 
-
 ///===== character =====
 ///String to character array
 var abcArr = Array(abc);
@@ -71,12 +71,10 @@ for char in hw {
     }
 }
 
-///character
 ///ascii value
 Character("a").isASCII //true
 Character("a").asciiValue //97
 Character("c").asciiValue! - Character("a").asciiValue! //2
-
 hw.first //type(of:) Optional<Character>.Type
 hw.last
 hw.firstIndex(of:"o") //type(of:) Optional<String.Index>.Type
@@ -87,4 +85,3 @@ hw[hw.startIndex] //"h"
 hw[hw.index(before: hw.endIndex)] //"d"
 hw[hw.index(after: hw.startIndex)] //"e"
 hw[hw.index(hw.startIndex, offsetBy: 1)] //"e"
-
