@@ -107,7 +107,7 @@ var fiveZs = Array(repeating: "Z", count: 5)
 for number in numberArray {number} //0123456789
 for i in 0..<numberArray.count {numberArray[i]} //0123456789
 for i in 0...numberArray.count-1 {numberArray[i]} //0123456789
-
+for (index, value) in numberArray.enumerated() {print("\(index)-\(value)")}
 /// sum
 let total = numberArray.reduce(0, +) //45
 
@@ -121,6 +121,11 @@ appendArray.append(contentsOf: ignoreFirstFive) //[5,6,7,8,9]
 appendArray.append(10) //[5,6,7,8,9,10]
 appendArray.insert(4, at:0) //[4,5,6,7,8,9,10]
 appendArray.remove(at:appendArray.count-1) //10
+appendArray.removeLast()//9
+
+var appendArray2 = [1,2,3] + [4,5,6]
+appendArray2 += [7]
+appendArray2 += [8,9,10]
 
 /// contains
 numberArray.contains(9) //true
@@ -157,6 +162,12 @@ dict.removeValue(forKey:"k4") // 4 ["k1": 1, "k2": 2]
 
 /// iterate
 for (key,value) in dict {print("\(key):\(value)")}
+for key in dict.keys {print("\(key)")}
+for value in dict.values {print("\(value)")}
+
+/// dict to array
+let keys = [String](dict.keys)
+let values = [Int](dict.values)
 
 /// ===== set =====
 var emptySet = Set<String>()
@@ -179,13 +190,27 @@ ingredients.remove("sugar") //{"cocoa beans", "cocoa butter", "salt", "milk"}
 
 /// iterate
 for item in ingredients{print(item)}
+for item in ingredients.sorted(){print(item)}
 
 /// Tests whether primes is a subset of a Range
 primes.isSubset(of: 0..<7) //true
 primes.isSubset(of: 0..<6) //false
 
-/// Performs an intersection with an Array
-let favoriteNumbers = [5, 7, 15, 21]
-primes.intersection(favoriteNumbers)
+/// intersection, union, subtracting & symmetricDifference
+let oddDigits: Set = [1, 3, 5, 7, 9]
+let evenDigits: Set = [0, 2, 4, 6, 8]
+let singleDigitPrimeNumbers: Set = [2, 3, 5, 7]
+oddDigits.union(evenDigits).sorted() // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+oddDigits.intersection(evenDigits).sorted()// []
+oddDigits.subtracting(singleDigitPrimeNumbers).sorted()// [1, 9]
+oddDigits.symmetricDifference(singleDigitPrimeNumbers).sorted()// [1, 2, 9]
+
+/// subset, superset
+let houseAnimals: Set = ["🐶", "🐱"]
+let farmAnimals: Set = ["🐮", "🐔", "🐑", "🐶", "🐱"]
+let cityAnimals: Set = ["🐦", "🐭"]
+houseAnimals.isSubset(of: farmAnimals) // true
+farmAnimals.isSuperset(of: houseAnimals) // true
+farmAnimals.isDisjoint(with: cityAnimals) // true
 
 ```
