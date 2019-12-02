@@ -26,6 +26,7 @@
 		1BF9EDF02394207B00A36E89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BF9EDF62394209A00A36E89 /* StringCheatSheet.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StringCheatSheet.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		1BF9EDF72394467000A36E89 /* CollectionCheatSheet.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CollectionCheatSheet.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		1BF9EDF8239496D700A36E89 /* ControlFlowCheatSheet.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ControlFlowCheatSheet.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		1BF9EDD62394207900A36E89 = {
 			isa = PBXGroup;
 			children = (
+				1BF9EDF8239496D700A36E89 /* ControlFlowCheatSheet.playground */,
 				1BF9EDF72394467000A36E89 /* CollectionCheatSheet.playground */,
 				1BF9EDF62394209A00A36E89 /* StringCheatSheet.playground */,
 				1BF9EDE12394207900A36E89 /* SwiftCheatSheet */,
