@@ -4,7 +4,7 @@
 ### String and Character
 [\StringCheatSheet.playground/Contents.swift](https://github.com/leebart/SwiftCheatSheet/blob/master/StringCheatSheet.playground/Contents.swift)
 
-```
+```swift
 var abc = "abc", def = "def", hw = "hello world"
 
 ///String compare
@@ -96,7 +96,7 @@ hw[hw.index(hw.startIndex, offsetBy: 1)] //"e"
 #### Array, dictionary & Set
 [\CollectionCheatSheet.playground/Contents.swift](https://github.com/leebart/SwiftCheatSheet/blob/master/CollectionCheatSheet.playground/Contents.swift)
 
-```
+```swift
 /// ===== array =====
 var optionalArray:[Int]?
 var emptyArray = [Int]()
