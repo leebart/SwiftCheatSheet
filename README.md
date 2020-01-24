@@ -306,6 +306,12 @@ func ifLet(myname:String?) -> String {
     else{return ""}
 }
 
+// min, max
+min(0,1)
+max(0,1)
+[0,1,2,3].min()
+[0,1,2,3].max()
+
 /// api check
 if #available(iOS 10, macOS 10.12, *) {
     // Use iOS 10 APIs on iOS, and use macOS 10.12 APIs on macOS
