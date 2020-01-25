@@ -111,6 +111,8 @@ for (index, value) in numberArray.enumerated() {print("\(index)-\(value)")}
 /// sum
 let total = numberArray.reduce(0, +) //45
 
+// string array reduce
+let helloworld = ["hello","world"].reduce("") {text, word in "\(text)\(word) "}//hello world 
 /// subarray
 let ignoreFirstFive = numberArray[5...] //56789 type(of:) ArraySlice<Int>.Type
 let arrayIgnoreFirstFive = Array(ignoreFirstFive) //56789 type(of:) Array<Int>.Type
