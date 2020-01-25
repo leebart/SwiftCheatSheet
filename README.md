@@ -86,7 +86,9 @@ hw.firstIndex(of:"o") //type(of:) Optional<String.Index>.Type
 var a = abc.firstIndex{$0 < "c"} //type(of:) Optional<String.Index>.Type
 
 ///index, get char in string
+let hw = "hello world"
 hw[hw.startIndex] //"h"
+hw[hw.endIndex] //out of bounds
 hw[hw.index(before: hw.endIndex)] //"d"
 hw[hw.index(after: hw.startIndex)] //"e"
 hw[hw.index(hw.startIndex, offsetBy: 1)] //"e"
