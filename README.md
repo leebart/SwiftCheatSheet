@@ -92,6 +92,12 @@ hw[hw.endIndex] //out of bounds
 hw[hw.index(before: hw.endIndex)] //"d"
 hw[hw.index(after: hw.startIndex)] //"e"
 hw[hw.index(hw.startIndex, offsetBy: 1)] //"e"
+
+extension String {
+    func charAt(_ index:Int) -> Character{
+        return self[self.index(self.startIndex, offsetBy: index)]
+    }
+}
 ```
 
 ### Collections
