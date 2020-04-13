@@ -111,6 +111,11 @@ var emptyArray = [Int]()
 var numberArray = [0,1,2,3,4,5,6,7,8,9]
 var fiveZs = Array(repeating: "Z", count: 5)
 
+var nums = [4,3,2,1]
+var temp1 = [4,3,2,1].sorted() //[1,2,3,4]
+var temp2 = [4,3,2,1][1...].sorted() //[4,1,2,3]
+nums.swapAt(0,1) //[3,4,2,1]
+ 
 /// iterate
 for number in numberArray {number} //0123456789
 for i in 0..<numberArray.count {numberArray[i]} //0123456789
